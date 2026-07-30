@@ -1,7 +1,5 @@
-# Jão - Memórias Póstumas
+# Site Olivia Rodrigo - GUTS
 
-Este é um site desenvolvido para uma atividade da Alura.
+Este site foi criado para apresentar informações sobre o álbum GUTS, da cantora Olivia Rodrigo.
 
-O projeto apresenta informações sobre o cantor Jão, o álbum *Memórias Póstumas.*
-
-Desenvolvido por: ANA JÚLIA 1°ADM
+O projeto apresenta a estética do álbum, sua história e algumas músicas marcantes.
