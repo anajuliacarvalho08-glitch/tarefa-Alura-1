@@ -6,14 +6,13 @@
 
 
 body {
-    background-color: #16001f;
+    background: #120014;
     color: #ffffff;
     font-family: "Poppins", sans-serif;
-    line-height: 1.6;
 }
 
 
-/* TÍTULOS */
+/* Títulos estilo rabisco */
 
 h1, h2, h3 {
     font-family: "Permanent Marker", cursive;
@@ -21,29 +20,27 @@ h1, h2, h3 {
 
 
 h1 {
-    font-size: 70px;
-    color: #d9a7ff;
+    font-size: 75px;
+    color: #ffffff;
+    text-shadow: 4px 4px #7b00a8;
 }
 
 
 h2 {
     color: #ff4d8d;
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 45px;
 }
 
 
 h3 {
-    color: #ffb3d1;
+    color: #ff7eb3;
     font-size: 30px;
 }
 
 
-
-/* CABEÇALHO */
+/* Capa inicial */
 
 header {
-
     height: 100vh;
 
     display: flex;
@@ -55,52 +52,53 @@ header {
 
     background:
     linear-gradient(
-    rgba(20,0,30,0.6),
-    #16001f
+        rgba(20,0,30,0.5),
+        #120014
     );
-
 }
 
 
 header p {
-
-    font-size: 50px;
-    color: #ff4d8d;
-
+    font-size: 55px;
+    color: #ff3366;
+    transform: rotate(-5deg);
 }
 
 
 
-/* SEÇÕES */
+/* Conteúdo */
 
 section {
 
     width: 85%;
-    margin: 70px auto;
+    margin: 80px auto;
 
-    padding: 40px;
+    padding: 45px;
 
-    background-color: #24002f;
+    background: #210025;
 
-    border-radius: 25px;
+    border: 2px solid #ff3366;
 
-    border: 3px solid #ff4d8d;
+    border-radius: 15px;
+
+    box-shadow: 8px 8px 0px #7b00a8;
 
 }
 
 
-
-/* CARDS DAS MÚSICAS */
+/* Cards das músicas */
 
 .card {
 
-    background-color: #330044;
+    background: #310035;
 
-    padding: 25px;
+    margin-top: 30px;
 
-    margin: 25px 0;
+    padding: 30px;
 
-    border-radius: 20px;
+    border-radius: 10px;
+
+    border-left: 8px solid #ff3366;
 
     transform: rotate(-1deg);
 
@@ -109,42 +107,21 @@ section {
 
 .card:hover {
 
-    transform: scale(1.03);
+    transform: rotate(1deg) scale(1.03);
 
 }
 
 
-
-/* LISTAS */
-
-ul {
-
-    list-style: "🎸 ";
-
-    padding-left: 30px;
-
-}
-
-
-
-li {
-
-    margin: 10px;
-
-}
-
-
-
-/* RODAPÉ */
+/* Rodapé */
 
 footer {
 
-    background-color: #09000d;
-
-    text-align: center;
+    background: #080008;
 
     padding: 30px;
 
-    color: #d9a7ff;
+    text-align: center;
+
+    color: #ff7eb3;
 
 }
