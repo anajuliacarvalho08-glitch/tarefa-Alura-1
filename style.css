@@ -6,13 +6,13 @@
 
 
 body {
-    background: #120014;
-    color: #ffffff;
+    background-color: #0b0710;
+    color: #f5f5f5;
     font-family: "Poppins", sans-serif;
 }
 
 
-/* Títulos estilo rabisco */
+/* Títulos */
 
 h1, h2, h3 {
     font-family: "Permanent Marker", cursive;
@@ -22,25 +22,28 @@ h1, h2, h3 {
 h1 {
     font-size: 75px;
     color: #ffffff;
-    text-shadow: 4px 4px #7b00a8;
+    text-shadow: 5px 5px #4b0066;
 }
 
 
 h2 {
-    color: #ff4d8d;
-    font-size: 45px;
+    color: #7c2aa8;
+    font-size: 42px;
+    margin-bottom: 25px;
 }
 
 
 h3 {
-    color: #ff7eb3;
+    color: #8f1d3c;
     font-size: 30px;
 }
 
 
-/* Capa inicial */
+
+/* Capa */
 
 header {
+
     height: 100vh;
 
     display: flex;
@@ -52,76 +55,111 @@ header {
 
     background:
     linear-gradient(
-        rgba(20,0,30,0.5),
-        #120014
+        180deg,
+        #0b0710,
+        #1c0528
     );
+
 }
 
 
 header p {
-    font-size: 55px;
-    color: #ff3366;
-    transform: rotate(-5deg);
+
+    font-size: 60px;
+    color: #8f1d3c;
+
+    letter-spacing: 8px;
+
 }
 
 
 
-/* Conteúdo */
+/* Seções */
 
 section {
 
     width: 85%;
+
     margin: 80px auto;
 
     padding: 45px;
 
-    background: #210025;
 
-    border: 2px solid #ff3366;
+    background-color: #160d20;
 
-    border-radius: 15px;
 
-    box-shadow: 8px 8px 0px #7b00a8;
+    border: 2px solid #4b0066;
+
+
+    box-shadow: 10px 10px 0px #8f1d3c;
+
+
+    border-radius: 5px;
 
 }
+
+
+
+/* Textura de rabisco */
+
+section::before {
+
+    content: "";
+
+    display: block;
+
+    height: 5px;
+
+    width: 80px;
+
+    background-color: #8f1d3c;
+
+    margin-bottom: 20px;
+
+}
+
 
 
 /* Cards das músicas */
 
 .card {
 
-    background: #310035;
-
-    margin-top: 30px;
+    background-color: #21112d;
 
     padding: 30px;
 
-    border-radius: 10px;
+    margin: 30px 0;
 
-    border-left: 8px solid #ff3366;
+
+    border-left: 8px solid #8f1d3c;
+
 
     transform: rotate(-1deg);
+
+
+    box-shadow: 5px 5px 0px #4b0066;
 
 }
 
 
 .card:hover {
 
-    transform: rotate(1deg) scale(1.03);
+    transform: rotate(1deg);
 
 }
+
 
 
 /* Rodapé */
 
 footer {
 
-    background: #080008;
+    background-color: #050308;
 
     padding: 30px;
 
     text-align: center;
 
-    color: #ff7eb3;
+    color: #888;
 
 }
