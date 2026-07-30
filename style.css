@@ -6,9 +6,10 @@
 
 
 body {
-    background-color: #0b0710;
-    color: #f5f5f5;
+    background-color: #120018;
+    color: #ffffff;
     font-family: "Poppins", sans-serif;
+    line-height: 1.6;
 }
 
 
@@ -20,27 +21,26 @@ h1, h2, h3 {
 
 
 h1 {
-    font-size: 75px;
+    font-size: 70px;
     color: #ffffff;
-    text-shadow: 5px 5px #4b0066;
 }
 
 
 h2 {
-    color: #7c2aa8;
-    font-size: 42px;
+    font-size: 40px;
+    color: #c1123f;
     margin-bottom: 25px;
 }
 
 
 h3 {
-    color: #8f1d3c;
-    font-size: 30px;
+    font-size: 28px;
+    color: #ffffff;
 }
 
 
 
-/* Capa */
+/* Capa inicial */
 
 header {
 
@@ -55,9 +55,8 @@ header {
 
     background:
     linear-gradient(
-        180deg,
-        #0b0710,
-        #1c0528
+        rgba(18,0,24,0.7),
+        #120018
     );
 
 }
@@ -65,10 +64,9 @@ header {
 
 header p {
 
-    font-size: 60px;
-    color: #8f1d3c;
+    font-size: 55px;
 
-    letter-spacing: 8px;
+    color: #c1123f;
 
 }
 
@@ -80,41 +78,27 @@ section {
 
     width: 85%;
 
-    margin: 80px auto;
+    margin: 70px auto;
 
     padding: 45px;
 
+    background-color: #21002e;
 
-    background-color: #160d20;
+    border-radius: 20px;
 
+    border: 1px solid #c1123f;
 
-    border: 2px solid #4b0066;
-
-
-    box-shadow: 10px 10px 0px #8f1d3c;
-
-
-    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(193,18,63,0.2);
 
 }
 
 
 
-/* Textura de rabisco */
+/* Textos */
 
-section::before {
+p {
 
-    content: "";
-
-    display: block;
-
-    height: 5px;
-
-    width: 80px;
-
-    background-color: #8f1d3c;
-
-    margin-bottom: 20px;
+    font-size: 18px;
 
 }
 
@@ -124,27 +108,25 @@ section::before {
 
 .card {
 
-    background-color: #21112d;
+    background-color: #17001f;
 
     padding: 30px;
 
-    margin: 30px 0;
+    margin-top: 30px;
 
+    border-radius: 15px;
 
-    border-left: 8px solid #8f1d3c;
-
-
-    transform: rotate(-1deg);
-
-
-    box-shadow: 5px 5px 0px #4b0066;
+    border-left: 6px solid #c1123f;
 
 }
 
 
+
 .card:hover {
 
-    transform: rotate(1deg);
+    transform: translateY(-5px);
+
+    transition: 0.3s;
 
 }
 
@@ -154,12 +136,12 @@ section::before {
 
 footer {
 
-    background-color: #050308;
-
-    padding: 30px;
+    background-color: #08000b;
 
     text-align: center;
 
-    color: #888;
+    padding: 30px;
+
+    color: #ffffff;
 
 }
