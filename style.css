@@ -4,224 +4,147 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 body {
-    background: #11140d;
-    color: #f5f1e6;
+    background-color: #16001f;
+    color: #ffffff;
     font-family: "Poppins", sans-serif;
+    line-height: 1.6;
 }
 
 
-/* MENU */
+/* TÍTULOS */
 
-nav {
-    width: 100%;
-    padding: 25px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    z-index: 10;
-}
-
-nav h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 45px;
-    color: #d7c9a3;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #a8b57a;
+h1, h2, h3 {
+    font-family: "Permanent Marker", cursive;
 }
 
 
-/* CAPA */
-
-.hero {
-    height: 100vh;
-    background:
-    linear-gradient(
-        rgba(20,25,15,0.65),
-        rgba(17,20,13,1)
-    ),
-    url("img/jao.jpg");
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-}
-
-
-.hero-text {
-    max-width: 800px;
-    padding: 20px;
-}
-
-.hero h2 {
-    font-family: "Cormorant Garamond", serif;
+h1 {
     font-size: 70px;
-    color: #d7c9a3;
-}
-
-.hero p {
-    font-size: 18px;
-    margin: 25px 0;
+    color: #d9a7ff;
 }
 
 
-/* BOTÃO */
-
-.botao {
-    display: inline-block;
-    padding: 14px 35px;
-    border: 1px solid #d7c9a3;
-    color: #d7c9a3;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.botao:hover {
-    background: #d7c9a3;
-    color: #11140d;
-}
-
-
-/* CARDS */
-
-.card {
-    width: 85%;
-    margin: 80px auto;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-
-    background: #1b2114;
-    padding: 50px;
-    border-radius: 25px;
-}
-
-
-.card.reverso {
-    flex-direction: row-reverse;
-}
-
-
-.texto {
-    flex: 1;
-}
-
-
-.texto h2,
-#galeria h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 45px;
-    color: #d7c9a3;
+h2 {
+    color: #ff4d8d;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 
-.texto p {
-    line-height: 1.8;
-    color: #eeeeee;
+h3 {
+    color: #ffb3d1;
+    font-size: 30px;
 }
 
 
-.imagem {
-    flex: 1;
+
+/* CABEÇALHO */
+
+header {
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+    linear-gradient(
+    rgba(20,0,30,0.6),
+    #16001f
+    );
+
 }
 
 
-.imagem img {
-    width: 100%;
-    border-radius: 20px;
+header p {
+
+    font-size: 50px;
+    color: #ff4d8d;
+
 }
 
 
-/* GALERIA */
 
-#galeria {
+/* SEÇÕES */
+
+section {
+
     width: 85%;
-    margin: 80px auto;
+    margin: 70px auto;
+
+    padding: 40px;
+
+    background-color: #24002f;
+
+    border-radius: 25px;
+
+    border: 3px solid #ff4d8d;
+
 }
 
 
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+
+/* CARDS DAS MÚSICAS */
+
+.card {
+
+    background-color: #330044;
+
+    padding: 25px;
+
+    margin: 25px 0;
+
+    border-radius: 20px;
+
+    transform: rotate(-1deg);
+
 }
 
 
-.galeria img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 15px;
+.card:hover {
+
+    transform: scale(1.03);
+
 }
+
+
+
+/* LISTAS */
+
+ul {
+
+    list-style: "🎸 ";
+
+    padding-left: 30px;
+
+}
+
+
+
+li {
+
+    margin: 10px;
+
+}
+
 
 
 /* RODAPÉ */
 
 footer {
+
+    background-color: #09000d;
+
     text-align: center;
+
     padding: 30px;
-    background: #080a06;
-    color: #d7c9a3;
-}
 
-
-/* CELULAR */
-
-@media(max-width: 800px){
-
-    nav {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    nav ul {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-
-    .hero h2 {
-        font-size: 45px;
-    }
-
-
-    .card,
-    .card.reverso {
-        flex-direction: column;
-        padding: 30px;
-    }
-
-
-    .galeria {
-        grid-template-columns: 1fr 1fr;
-    }
+    color: #d9a7ff;
 
 }
