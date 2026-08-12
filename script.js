@@ -1,7 +1,12 @@
-function curtir(botao, tipo) {
-    if (botao.style.backgroundColor === "lightgreen") {
-        botao.style.backgroundColor = "";
-    } else {
-        botao.style.backgroundColor = "lightgreen";
-    }
+function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
+
+if (curtiu === false) {
+texto.textContent++;
+curtiu = true;
+} else {
+texto.textContent--;
+curtiu = false;
+}
 }
